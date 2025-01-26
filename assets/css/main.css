@@ -3822,7 +3822,53 @@ input, select, textarea {
 					}
 
 			}
+		
+		
+		#main > .education-section {
+		    display: flex;
+		    flex-direction: column; /* Stack entries vertically */
+		    gap: 1.5rem; /* Space between entries */
+		    padding: 2rem 0; /* Vertical padding */
+		    text-align: left; /* Align text to the left */
+		}
 
+		#main > .education-section .education-entry {
+		    display: flex; /* Align logo and details horizontally */
+		    align-items: center; /* Center logo and text vertically */
+		    gap: 1rem; /* Space between logo and text */
+		    padding: 1rem; /* Add padding inside the entry */
+		    border: 1px solid #ddd; /* Add a clean border around each entry */
+		    border-radius: 8px; /* Slightly rounded corners */
+		    background-color: #f9f9f9; /* Subtle background for each entry */
+		    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for a clean look */
+		}
+
+		#main > .education-section .education-entry .edu-logo {
+		    width: 30px; /* Set a small width for the logos */
+		    height: 30px; /* Ensure the height is uniform */
+		    flex-shrink: 0; /* Prevent the logo from shrinking */
+		    object-fit: contain; /* Maintain aspect ratio and fit within bounds */
+		}
+
+		#main > .education-section .education-entry .edu-details {
+		    flex-grow: 1; /* Allow text to take up the remaining space */
+		}
+
+		#main > .education-section .education-entry .edu-details h2,
+		#main > .education-section .education-entry .edu-details h3 {
+		    margin: 0; /* Remove default margins for headings */
+		    font-size: 1rem; /* Keep headings compact */
+		}
+
+		#main > .education-section .education-entry .edu-details p {
+		    margin: 0.25rem 0; /* Add a small margin for spacing */
+		    font-size: 0.9rem; /* Make text slightly smaller for compactness */
+		    color: #666; /* Muted color for description */
+		}
+
+
+		
+		
 		#main > .posts {
 			display: -moz-flex;
 			display: -webkit-flex;
