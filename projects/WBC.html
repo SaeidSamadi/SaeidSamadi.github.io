@@ -35,10 +35,38 @@
 						<h1><a href="WBC.html">Real-Time Whole-Body Balance Control</a></h1>
 						<span class="date">Nov. 2018 - Feb. 2022</span>
 					</header>
-					<p>
-						This project focused on developing a real-time whole-body balance control system for the HRP-4 humanoid robot. 
-						The system integrates multi-contact planning and feedback control strategies for maintaining balance in dynamic environments.
-					</p>
+					<div class="project-details">
+					    <!-- Full Description -->
+					    <div class="full-description">
+						<h2>Humanoid Control Under Interchangeable Fixed and Sliding Unilateral Contacts</h2>
+						<p>
+						    This project focuses on developing a robust control strategy for humanoid robots operating in challenging multi-contact scenarios.
+						    The approach enables the robot to switch seamlessly between fixed and sliding contact modes, maintaining active balance and dynamic
+						    stability. By using a novel optimization technique based on the Chebyshev center, this method calculates the safe center-of-mass
+						    (CoM) position and wrench distribution in real-time, eliminating the need for precomputed balance regions. The framework integrates
+						    sliding and fixed contacts into a unified control approach, which can adapt to non-coplanar and complex terrains.
+						</p>
+						<h3>Goals</h3>
+						<ul>
+						    <li>Enable humanoid robots to maintain balance while transitioning between fixed and sliding contacts in real-time.</li>
+						    <li>Provide a computationally efficient control framework for tasks involving multi-contact motion.</li>
+						    <li>Demonstrate advanced capabilities like shuffling, co-wiping, and transitions in non-coplanar settings.</li>
+						</ul>
+						<h3>Experiments</h3>
+						<p>
+						    The approach was validated on the HRP-4 humanoid robot, which successfully performed complex tasks, such as wiping surfaces,
+						    shuffling on inclined planes, and maintaining stability during transitions.
+						</p>
+						<h3>Key Outcomes</h3>
+						<ul>
+						    <li>Reduction in computational cost for balance control.</li>
+						    <li>Seamless integration of contact modes into a single control framework.</li>
+						    <li>Improved stability and adaptability in confined spaces.</li>
+						</ul>
+					    </div>
+
+					</div>
+
 					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
 					    <iframe 
 						width="1120" 
@@ -50,16 +78,26 @@
 						allowfullscreen>
 					    </iframe>
 					</div>
-					<p>
-						You can find the detailed information about the approach through this link
-					</p>
+					<div class="more-info">
+						<p>
+						    For more information, refer to the publication in 
+						    <a href="https://doi.org/10.1109/LRA.2021.3070374" target="_blank">IEEE Robotics and Automation Letters</a>.
+						</p>
+					    </div>
 					<header class="major">
 						<span class="date">Nov. 2018 - Feb. 2022</span>
 					</header>
-					<p>
-						It had two stages for completion of the proposed structure.
-						The first step was taken with the simpler version of the main work where details can eb found in the paper.
-					</p>
+					<div class="project-description">
+					    <h2>Balance of Humanoid Robots in a Mix of Fixed and Sliding Multi-Contact Scenarios</h2>
+					    <p>This project addresses the challenge of maintaining the balance of humanoid robots in multi-contact settings with both fixed and intentionally sliding contacts. The proposed methodology introduces a Center-of-Mass (CoM) Support Area (CSA) that ensures stability during such interactions. The CSA is computed analytically and used as a constraint in a Centroidal Quadratic Program (QP) to optimize the CoM position and wrench distribution under multi-contact scenarios. This approach is demonstrated in tasks such as pushing against a wall and wiping with the HRP-4 humanoid robot. The methodology enables robust balance control for tasks requiring sliding contacts, expanding the capabilities of humanoid robots in dynamic and interactive environments.</p>
+					    <p>Key highlights of the project include:</p>
+					    <ul>
+						<li>Introduction of a CSA for multi-contact scenarios with sliding contacts.</li>
+						<li>Use of Centroidal QP for balancing and wrench distribution.</li>
+						<li>Experimental validation on the HRP-4 robot in pushing and wiping tasks.</li>
+					    </ul>
+					</div>
+
 					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
 					    <iframe 
 						width="1120" 
@@ -71,15 +109,28 @@
 						allowfullscreen>
 					    </iframe>
 					</div>
-					<p>
-						You can find the detailed information about the approach through this link
-					</p>
+					<div class="project-reference">
+					    <h3>For More Information</h3>
+					    <p>For more information, refer to the publication in the <em>2020 IEEE International Conference on Robotics and Automation (ICRA)</em>. <a href="https://ieeexplore.ieee.org/document/9911943" target="_blank">[Read Full Paper]</a></p>
+					</div>
+
 					<header class="major">
 						<span class="date">Nov. 2018 - Feb. 2022</span>
 					</header>
-					<p>
-						Also we did the non-prehensile manipulation with the same robot.
-					</p>
+					<div class="project-details">
+					    <h2>Control of Humanoid in Multiple Fixed and Moving Unilateral Contacts</h2>
+					    <p>
+						This project addresses the challenge of maintaining balance in multi-limbed humanoid robots, such as the HRP-4, during complex tasks involving multiple fixed and moving unilateral contacts. 
+						The key innovation lies in enhancing the computational efficiency of geometric balance region algorithms, making them feasible for real-time integration into whole-body control frameworks. 
+						By computing balance regions dynamically and incorporating them directly into task-level control, this approach avoids the traditional two-level computation pitfalls, ensuring smoother and more adaptive movements in humanoids.
+					    </p>
+					    <p>
+						Experimental validation involved HRP-4 performing tasks such as pushing a box while maintaining balance, demonstrating the feasibility of real-time control under challenging contact dynamics. 
+						The results highlight significant improvements in the robot's ability to adapt its center of mass (CoM) and contact forces dynamically.
+					    </p>
+					    <p>For more information, refer to the publication in the <em>20th International Conference on Advanced Robotics (ICAR), 2021</em>.</p>
+					</div>
+
 					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
 					    <iframe 
 						width="1120" 
@@ -91,6 +142,13 @@
 						allowfullscreen>
 					    </iframe>
 					</div>
+					<div class="project-link">
+					    <p>
+						For more details, refer to the publication in the <em>20th International Conference on Advanced Robotics (ICAR), 2021</em>. 
+						<a href="https://youtu.be/QLtO3rb4_NY" target="_blank">[Supplementary Video]</a>
+					    </p>
+					</div>
+
 
 				</section>
 			</div>
