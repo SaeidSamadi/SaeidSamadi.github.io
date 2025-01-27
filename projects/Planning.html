@@ -72,9 +72,25 @@
 					<header class="major">
 						<span class="date">Nov. 2018 - Feb. 2022</span>
 					</header>
-					<p>
-						Also we did the Receding Horizon Planning
-					</p>
+					<div class="project-details">
+					    <h2>Online Multicontact Receding Horizon Planning via Value Function Approximation</h2>
+					    <p>
+						This project focuses on enabling legged robots, such as humanoid robots, to plan multicontact motions in a receding horizon manner. 
+						By introducing novel approaches to approximate value functions, this work significantly reduces computation complexity, allowing real-time 
+						replanning of motions even in dynamic and uneven terrains. Two methods were proposed:
+					    </p>
+					    <ul>
+						<li><strong>Multi-Fidelity RHP (MF-RHP):</strong> Combines accurate dynamics modeling in the execution horizon with relaxed dynamics in the prediction horizon, ensuring efficient and feasible planning.</li>
+						<li><strong>Locally Guided RHP (LG-RHP):</strong> Uses a learned oracle to predict intermediate goals, constructing local value functions that guide efficient short-horizon planning.</li>
+					    </ul>
+					    <p>
+						Key contributions include extensive simulations validating the feasibility of planned trajectories, as well as real-world experiments on the Talos humanoid robot, demonstrating the effectiveness of the LG-RHP approach.
+					    </p>
+					    <p>
+						<strong>Goals:</strong> To enable real-time multicontact motion planning for humanoid robots traversing challenging terrains while ensuring computational efficiency and adaptability to dynamic environments.
+					    </p>
+					</div>
+
 					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
 					    <iframe 
 						width="1120" 
@@ -86,6 +102,14 @@
 						allowfullscreen>
 					    </iframe>
 					</div>
+					<div class="project-reference">
+					    <p>
+						For more information, refer to the publication in 
+						<em>IEEE Transactions on Robotics</em> and the accompanying video: 
+						<a href="https://youtu.be/STBYJl7jvsg" target="_blank">[Watch Video]</a>.
+					    </p>
+					</div>
+
 
 				</section>
 			</div>
