@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Saeid Samadi — CV</title>
+		<style>
+			:root {
+				--ink: #15202b;
+				--muted: #52606d;
+				--accent: #087f9f;
+				--line: #cbd5dc;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			@page {
+				size: A4;
+				margin: 0;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				background: #e9edf0;
+				color: var(--ink);
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 8pt;
+				line-height: 1.28;
+			}
+
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+			.page {
+				position: relative;
+				width: 210mm;
+				min-height: 297mm;
+				margin: 8mm auto;
+				padding: 11mm 13mm 10mm;
+				background: #fff;
+				box-shadow: 0 3mm 10mm rgba(21, 32, 43, 0.16);
+				page-break-after: always;
+			}
+
+			.page:last-child {
+				page-break-after: auto;
+			}
+
+			.name {
+				margin: 0;
+				font-size: 23pt;
+				font-weight: 800;
+				letter-spacing: -0.6pt;
+				line-height: 1;
+			}
+
+			.title {
+				margin: 2.2mm 0 1.4mm;
+				color: var(--accent);
+				font-size: 9pt;
+				font-weight: 800;
+				letter-spacing: 0.7pt;
+				text-transform: uppercase;
+			}
+
+			.contact {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1mm 4mm;
+				color: var(--muted);
+				font-size: 7.4pt;
+			}
+
+			.contact a {
+				border-bottom: 0.2mm solid var(--line);
+			}
+
+			.section {
+				margin-top: 4mm;
+			}
+
+			.section-title {
+				margin: 0 0 2mm;
+				padding-bottom: 0.9mm;
+				border-bottom: 0.45mm solid var(--accent);
+				color: var(--accent);
+				font-size: 8.7pt;
+				font-weight: 800;
+				letter-spacing: 0.65pt;
+				text-transform: uppercase;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.profile {
+				font-size: 8.2pt;
+				line-height: 1.38;
+			}
+
+			.expertise {
+				display: grid;
+				gap: 1.2mm;
+			}
+
+			.expertise-row {
+				display: grid;
+				grid-template-columns: 35mm 1fr;
+				gap: 3mm;
+			}
+
+			.expertise-row strong {
+				color: var(--ink);
+			}
+
+			.expertise-row span {
+				color: var(--muted);
+			}
+
+			.role {
+				margin-top: 2.6mm;
+			}
+
+			.role:first-of-type {
+				margin-top: 0;
+			}
+
+			.role-header {
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 4mm;
+				align-items: baseline;
+			}
+
+			.role h3 {
+				margin: 0;
+				font-size: 9pt;
+				font-weight: 800;
+			}
+
+			.role-dates {
+				color: var(--accent);
+				font-size: 7.5pt;
+				font-weight: 700;
+			}
+
+			.organisation {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 0.4mm;
+				color: var(--muted);
+				font-size: 7.6pt;
+				font-weight: 700;
+			}
+
+			ul {
+				margin: 1.2mm 0 0;
+				padding-left: 4.2mm;
+			}
+
+			li {
+				margin: 0 0 0.75mm;
+				padding-left: 0.7mm;
+			}
+
+			.compact-list li {
+				margin-bottom: 0.55mm;
+			}
+
+			.education-row,
+			.publication {
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 4mm;
+				margin-bottom: 1.25mm;
+			}
+
+			.education-row strong,
+			.publication strong {
+				font-size: 7.8pt;
+			}
+
+			.education-row span,
+			.publication span {
+				color: var(--muted);
+			}
+
+			.publication {
+				grid-template-columns: 1fr;
+				gap: 0.2mm;
+			}
+
+			.two-column {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 5mm;
+			}
+
+			.small {
+				font-size: 7.4pt;
+			}
+
+			.page-number {
+				position: absolute;
+				right: 13mm;
+				bottom: 5mm;
+				color: #7a8792;
+				font-size: 7pt;
+			}
+
+			@media print {
+				html,
+				body {
+					background: #fff;
+				}
+
+				.page {
+					margin: 0;
+					box-shadow: none;
+				}
+			}
+
+			@media screen and (max-width: 800px) {
+				.page {
+					width: 100%;
+					min-height: 0;
+					margin: 0;
+					padding: 8vw;
+					box-shadow: none;
+				}
+
+				.two-column {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section class="page">
+				<header>
+					<h1 class="name">Saeid Samadi</h1>
+					<p class="title">Senior Autonomy Engineer | Real-Time Systems | Control &amp; Sensing</p>
+					<div class="contact">
+						<span>United Kingdom</span>
+						<a href="mailto:sa.samadi74@gmail.com">sa.samadi74@gmail.com</a>
+						<a href="https://saeidsamadi.github.io">saeidsamadi.github.io</a>
+						<a href="https://linkedin.com/in/saeid-samadi-6ab86ba9">LinkedIn</a>
+						<a href="https://github.com/saeidsamadi">GitHub</a>
+						<a href="https://scholar.google.com/citations?user=oerbhTkAAAAJ">Google Scholar</a>
+					</div>
+				</header>
+
+				<section class="section">
+					<h2 class="section-title">Profile</h2>
+					<p class="profile">Senior autonomy engineer with 9+ years across humanoid control, contact-rich manipulation, teleoperation, force/torque sensing, and real-robot validation. At Humanoid, owns control capabilities from whole-body control and impedance tuning through embodiment integration, data collection, and industrial task deployment. Ph.D. in multi-contact humanoid control, with a track record of building the robot-side systems, data loops, and cross-functional engineering required to turn learned policies into reliable physical behaviour.</p>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Core Expertise</h2>
+					<div class="expertise">
+						<div class="expertise-row"><strong>Manipulation &amp; touch</strong><span>Contact-rich and bimanual manipulation; teleoperation; force/torque and capacitive sensing; gripper and suction integration; robot calibration; real-robot data collection.</span></div>
+						<div class="expertise-row"><strong>Control &amp; planning</strong><span>Whole-body and optimisation-based control; impedance, compliant and force control; kinematics and dynamics; balance/CoM constraints; collision avoidance; motion and footstep planning.</span></div>
+						<div class="expertise-row"><strong>Learning &amp; systems</strong><span>VLA/RL policy integration; sim-to-real validation; episode and log analysis; parameter identification; robot bring-up; safety, diagnostics, and cross-layer root-cause analysis.</span></div>
+						<div class="expertise-row"><strong>Software &amp; tools</strong><span>C++, Python, ROS/ROS2, Linux, Git, CMake, Docker, CI; MuJoCo, Gazebo, Choreonoid, mc_rtc, MoveIt, RViz, MATLAB/Simulink.</span></div>
+						<div class="expertise-row"><strong>Robot platforms</strong><span>Full-scale humanoid platforms, TALOS, HRP-4, and dual-arm mobile manipulators; force/torque sensors, grippers, suction end-effectors, and embedded interfaces.</span></div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Professional Experience</h2>
+
+					<article class="role">
+						<div class="role-header">
+							<h3>Senior Autonomy Engineer</h3>
+							<span class="role-dates">May 2026–Present</span>
+						</div>
+						<div class="organisation"><span>Humanoid</span><span>United Kingdom</span></div>
+						<ul>
+							<li>Own whole-body and manipulation-control capabilities for full-scale humanoid robots, taking work from algorithm and architecture through C++/ROS2 implementation, simulation, code review, hardware validation, and operational rollout.</li>
+							<li>Developed task-specific control behaviours for contact-rich parcel handling, including alignment, bimanual box handling, suction-gripper integration, safe mode transitions, and maintenance of task constraints; changes increased execution success and data-collection reliability.</li>
+							<li>Led cross-layer root-cause analysis of teleoperation jumps and missed command cycles by correlating tracking, network delivery, onboard scheduling, ROS/DDS timing, server output, and WBC logs; isolated upstream command gaps and helped drive smoothness fixes into the main stack.</li>
+							<li>Diagnosed and resolved whole-body-control performance bottlenecks, and am implementing a safety-conscious, dynamics-aware WBC architecture for high-frequency real-time deployment on hardware.</li>
+							<li>Validated mechanical range of motion and translated findings into robot limits and safe controller constraints; coordinated with hardware and learned-policy teams to expand usable manipulation workspace while preserving policy compatibility.</li>
+							<li>Tuned and integrated impedance, stiffness, damping, gravity/torque feedforward, and calibration changes to improve arm tracking and manipulation authority across robot configurations.</li>
+						</ul>
+					</article>
+
+					<article class="role">
+						<div class="role-header">
+							<h3>Robotics Laboratory Manager</h3>
+							<span class="role-dates">Jun 2023–May 2026</span>
+						</div>
+						<div class="organisation"><span>University of Edinburgh</span><span>Edinburgh, UK</span></div>
+						<ul>
+							<li>Led operational and technical delivery across eight robotics laboratories supporting humanoid, mobile-manipulation, assistive, and learning-based robotics programmes.</li>
+							<li>Owned hardware/software readiness, safety processes, procurement, vendor coordination, equipment lifecycle, experimental infrastructure, and technical support for demonstrations, workshops, student projects, industry visits, and external collaborations.</li>
+							<li>Built repeatable support and maintenance processes and received the 2025 School of Informatics Staff Award for Outstanding Contribution.</li>
+						</ul>
+					</article>
+				</section>
+
+				<span class="page-number">Saeid Samadi · 1 / 2</span>
+			</section>
+
+			<section class="page">
+				<header>
+					<h1 class="name">Saeid Samadi</h1>
+					<p class="title">Professional Experience Continued</p>
+				</header>
+
+				<section class="section">
+					<article class="role">
+						<div class="role-header">
+							<h3>Postdoctoral Researcher</h3>
+							<span class="role-dates">Mar 2022–Jun 2023</span>
+						</div>
+						<div class="organisation"><span>University of Edinburgh · SLMC Group</span><span>Edinburgh, UK</span></div>
+						<ul>
+							<li>Developed control and navigation components for assistive robots operating in dynamic healthcare and human-centred environments within an EU Horizon project.</li>
+							<li>Contributed to TALOS humanoid control, whole-body motion generation, online multi-contact planning, force-aware sensor integration, and compliant dual-arm mobile manipulation.</li>
+							<li>Converted research concepts into robust software prototypes, experiments, publications, and live demonstrations with interdisciplinary partners.</li>
+						</ul>
+					</article>
+
+					<article class="role">
+						<div class="role-header">
+							<h3>Doctoral Researcher in Humanoid Control</h3>
+							<span class="role-dates">Oct 2018–Feb 2022</span>
+						</div>
+						<div class="organisation"><span>LIRMM · University of Montpellier</span><span>Montpellier, France</span></div>
+						<ul>
+							<li>Owned the end-to-end algorithm-to-robot pipeline for real-time whole-body balance control on HRP-4 under fixed, sliding, and mixed unilateral contacts.</li>
+							<li>Designed control formulations, simulation studies, force/torque sensor integration, experiment plans, and real-hardware validation for contact-aware multi-contact stability.</li>
+							<li>Published first-author work in IEEE Robotics and Automation Letters and ICRA and completed a Ph.D. thesis on humanoid balance in multi-contact mode settings.</li>
+						</ul>
+					</article>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Selected Systems Impact</h2>
+					<ul class="compact-list">
+						<li><strong>Contact-rich robot intelligence:</strong> built interfaces and experiments spanning F/T sensing, compliant control, teleoperation, grippers and suction tooling, learned-policy execution, and episode-level diagnostics—the physical foundation required to collect and evaluate high-quality visuo-tactile manipulation data.</li>
+						<li><strong>Whole-body manipulation platform:</strong> integrated balance, collision avoidance, CoM and manipulability constraints, joint and actuator limits, and Cartesian task commands into deployable humanoid behaviour.</li>
+						<li><strong>Experiment and data quality:</strong> designed test matrices and data-collection workflows across robot configurations, compared episodes and logs across stacks, and turned failure signatures into actionable changes for control, software, and policy teams.</li>
+						<li><strong>Cross-functional ownership:</strong> operated across algorithms, production software, hardware bring-up, lab infrastructure, safety, procurement, vendors, data collection, demonstrations, and technical handover.</li>
+					</ul>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Education</h2>
+					<div class="education-row"><div><strong>Ph.D. in Robotics and Artificial Intelligence</strong><br /><span>University of Montpellier · Thesis: Humanoid Robots Balance in Multi-Contact Modes Settings</span></div><span>2018–2022</span></div>
+					<div class="education-row"><div><strong>M.Sc. in Mechanical Engineering</strong><br /><span>University of Tehran · Thesis: Online Walking of a Humanoid Robot on Rough Surfaces with Different Heights</span></div><span>2016–2018</span></div>
+					<div class="education-row"><div><strong>B.Sc. in Mechanical Engineering</strong><br /><span>University of Tabriz</span></div><span>2012–2016</span></div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Selected Publications</h2>
+					<div class="publication"><strong>Humanoid Control Under Interchangeable Fixed and Sliding Unilateral Contacts</strong><span>S. Samadi, J. Roux, A. Tanguy, S. Caron, A. Kheddar · IEEE Robotics and Automation Letters, 2021</span></div>
+					<div class="publication"><strong>Online Multi-Contact Receding Horizon Planning via Value Function Approximation</strong><span>J. Wang, S. Kim, T. S. Lembono, W. Du, J. Shim, S. Samadi, et al. · IEEE Transactions on Robotics, 2024</span></div>
+					<div class="publication"><strong>NAS: N-Step Computation of All Solutions to the Footstep Planning Problem</strong><span>S. Samadi, J. Wang, H. Wang, et al. · IEEE-RAS International Conference on Humanoid Robots, 2024</span></div>
+					<p class="small"><strong>Full list:</strong> <a href="https://scholar.google.com/citations?user=oerbhTkAAAAJ">Google Scholar</a></p>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Awards, Service &amp; Languages</h2>
+					<ul class="compact-list">
+						<li>Staff Award for Outstanding Contribution, University of Edinburgh School of Informatics, 2025.</li>
+						<li>UK Global Talent Visa, UKRI route, awarded for contributions to an EU Horizon-funded robotics project, 2022.</li>
+						<li>Reviewer for IEEE T-RO, RA-L, ICRA, IROS, and Humanoids, 2018–Present.</li>
+					</ul>
+					<p class="small"><strong>Languages:</strong> Professional English; fluent Persian, Azeri, and Turkish; intermediate French and Arabic; basic German.</p>
+				</section>
+
+				<span class="page-number">Saeid Samadi · 2 / 2</span>
+			</section>
+		</main>
+	</body>
+</html>

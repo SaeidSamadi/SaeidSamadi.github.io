@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /projects/Assistive.html
+
+Sitemap: https://saeidsamadi.github.io/sitemap.xml

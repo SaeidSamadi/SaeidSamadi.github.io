@@ -1,165 +1,129 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>Real-Time Whole-Body Balance Control</title>
+		<title>Real-Time Whole-Body Balance Control | Saeid Samadi</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Real-time whole-body balance control for HRP-4 under fixed, sliding, and moving multi-contact conditions." />
+		<meta name="theme-color" content="#15202b" />
+		<link rel="canonical" href="https://saeidsamadi.github.io/projects/WBC.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Real-Time Whole-Body Balance Control" />
+		<meta property="og:description" content="A research programme enabling HRP-4 to balance through fixed, sliding, and moving contacts." />
+		<meta property="og:url" content="https://saeidsamadi.github.io/projects/WBC.html" />
+		<meta property="og:image" content="https://saeidsamadi.github.io/images/projects/WBC.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/portfolio.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<a class="skip-link" href="#main">Skip to main content</a>
 
-		<!-- Wrapper -->
 		<div id="wrapper">
-
-			<!-- Header -->
 			<header id="header">
-				<a href="../index.html" class="logo">Portfolio</a>
+				<a href="../index.html" class="logo">Saeid Samadi</a>
 			</header>
 
-			<!-- Nav -->
-			<nav id="nav">
+			<nav id="nav" aria-label="Primary navigation">
 				<ul class="links">
-					<li class="active"><a href="WBC.html">Whole-Body Balance</a></li>
-					<li><a href="HRI.html">Human-Robot Interaction</a></li>
-					<li><a href="Harmony.html">Harmony EU Project</a></li>
-					<li><a href="Planning.html">Motion Planning</a></li>
-					<li><a href="Assistive.html">Assistive Autonomy</a></li>
+					<li><a href="../index.html">About</a></li>
+					<li><a href="../education.html">Experience</a></li>
+					<li class="active"><a href="../projects.html" aria-current="page">Projects</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../insights.html">Expertise</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="mailto:sa.samadi74@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/SaeidSamadi" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=oerbhTkAAAAJ&amp;hl=en" class="icon brands fa-google" target="_blank" rel="noopener noreferrer"><span class="label">Google Scholar</span></a></li>
 				</ul>
 			</nav>
 
-			<!-- Main Content -->
-			<div id="main">
-				<section class="post">
-					<header class="major">
-						<h1><a href="WBC.html">Real-Time Whole-Body Balance Control</a></h1>
-						<span class="date">Nov. 2019 - Oct. 2021</span>
-					</header>
-					<div class="project-details">
-					    <!-- Full Description -->
-					    <div class="full-description">
-						<h2>Humanoid Control Under Interchangeable Fixed and Sliding Unilateral Contacts</h2>
-						<p>
-						    This project focuses on developing a robust control strategy for humanoid robots operating in challenging multi-contact scenarios.
-						    The approach enables the robot to switch seamlessly between fixed and sliding contact modes, maintaining active balance and dynamic
-						    stability. By using a novel optimization technique based on the Chebyshev center, this method calculates the safe center-of-mass
-						    (CoM) position and wrench distribution in real-time, eliminating the need for precomputed balance regions. The framework integrates
-						    sliding and fixed contacts into a unified control approach, which can adapt to non-coplanar and complex terrains.
-						</p>
-						<h3>Goals</h3>
-						<ul>
-						    <li>Enable humanoid robots to maintain balance while transitioning between fixed and sliding contacts in real-time.</li>
-						    <li>Provide a computationally efficient control framework for tasks involving multi-contact motion.</li>
-						    <li>Demonstrate advanced capabilities like shuffling, co-wiping, and transitions in non-coplanar settings.</li>
+			<main id="main">
+				<article class="post">
+					<a class="back-link" href="../projects.html"><span aria-hidden="true">&larr;</span> All projects</a>
+					<header class="major project-header">
+						<p class="eyebrow">Case study · 2018–2022</p>
+						<h1>Real-Time Whole-Body Balance Control</h1>
+						<p class="lead">Control formulations that let HRP-4 remain stable while fixed, sliding, and moving contacts change during physical tasks.</p>
+						<ul class="tag-list" aria-label="Project technologies">
+							<li>HRP-4</li>
+							<li>Whole-body control</li>
+							<li>Quadratic programming</li>
+							<li>Force/torque sensing</li>
 						</ul>
-						<h3>Experiments</h3>
-						<p>
-						    The approach was validated on the HRP-4 humanoid robot, which successfully performed complex tasks, such as wiping surfaces,
-						    shuffling on inclined planes, and maintaining stability during transitions.
-						</p>
-						<h3>Key Outcomes</h3>
+					</header>
+
+					<section class="project-section">
+						<h2>Interchangeable fixed and sliding contacts</h2>
+						<p>The central challenge was to control a humanoid through contact transitions without relying on a separately precomputed balance region. The framework unifies fixed and intentionally sliding contacts and computes a safe centre-of-mass position and wrench distribution online.</p>
+						<h3>My contribution</h3>
 						<ul>
-						    <li>Reduction in computational cost for balance control.</li>
-						    <li>Seamless integration of contact modes into a single control framework.</li>
-						    <li>Improved stability and adaptability in confined spaces.</li>
+							<li>Developed optimisation-based balance formulations around the Chebyshev centre.</li>
+							<li>Integrated contact constraints and force/torque feedback into the robot control pipeline.</li>
+							<li>Designed simulation studies and hardware experiments for wiping, shuffling, and non-coplanar support conditions.</li>
 						</ul>
-					    </div>
+						<h3>Outcome</h3>
+						<p>The resulting controller handled contact-mode transitions in real time and demonstrated stable behaviour on HRP-4 across challenging multi-contact tasks.</p>
+						<div class="video-frame">
+							<iframe src="https://www.youtube-nocookie.com/embed/cFYd9oQueRE" title="HRP-4 interchangeable fixed and sliding contact experiments" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="project-actions">
+							<a href="https://ieeexplore.ieee.org/document/9380971" class="button primary" target="_blank" rel="noopener noreferrer">Read the RA-L paper</a>
+						</div>
+					</section>
 
-					</div>
+					<section class="project-section">
+						<p class="eyebrow">ICRA 2020</p>
+						<h2>Mixed fixed and sliding multi-contact balance</h2>
+						<p>This work introduced an analytically computed centre-of-mass support area for contact configurations that mix fixed and sliding supports. The region is used directly as a constraint in a centroidal quadratic programme for centre-of-mass and wrench optimisation.</p>
+						<ul>
+							<li>Represented stability under intentionally sliding contacts.</li>
+							<li>Connected the geometric support region to online centroidal control.</li>
+							<li>Validated pushing and wiping behaviours on the HRP-4 humanoid.</li>
+						</ul>
+						<div class="video-frame">
+							<iframe src="https://www.youtube-nocookie.com/embed/Wai-Lp4e5FE" title="HRP-4 fixed and sliding multi-contact balance experiments" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="project-actions">
+							<a href="https://ieeexplore.ieee.org/document/9197253" class="button" target="_blank" rel="noopener noreferrer">Read the ICRA paper</a>
+						</div>
+					</section>
 
-					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
-					    <iframe 
-						width="1120" 
-						height="630" 
-						src="https://www.youtube.com/embed/cFYd9oQueRE" 
-						title="YouTube video player" 
-						frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen>
-					    </iframe>
-					</div>
-					<div class="more-info">
-						<p>
-						    For more information, refer to the publication in 
-						    <a href="https://ieeexplore.ieee.org/abstract/document/9380971" target="_blank">IEEE Robotics and Automation Letters</a>.
-						</p>
-					    </div>
-					<header class="major">
-						<span class="date">Jan. 2019 - Oct. 2019</span>
-					</header>
-					<div class="project-description">
-					    <h2>Balance of Humanoid Robots in a Mix of Fixed and Sliding Multi-Contact Scenarios</h2>
-					    <p>This project addresses the challenge of maintaining the balance of humanoid robots in multi-contact settings with both fixed and intentionally sliding contacts. The proposed methodology introduces a Center-of-Mass (CoM) Support Area (CSA) that ensures stability during such interactions. The CSA is computed analytically and used as a constraint in a Centroidal Quadratic Program (QP) to optimize the CoM position and wrench distribution under multi-contact scenarios. This approach is demonstrated in tasks such as pushing against a wall and wiping with the HRP-4 humanoid robot. The methodology enables robust balance control for tasks requiring sliding contacts, expanding the capabilities of humanoid robots in dynamic and interactive environments.</p>
-					    <p>Key highlights of the project include:</p>
-					    <ul>
-						<li>Introduction of a CSA for multi-contact scenarios with sliding contacts.</li>
-						<li>Use of Centroidal QP for balancing and wrench distribution.</li>
-						<li>Experimental validation on the HRP-4 robot in pushing and wiping tasks.</li>
-					    </ul>
-					</div>
+					<section class="project-section">
+						<p class="eyebrow">ICAR 2021</p>
+						<h2>Multiple fixed and moving unilateral contacts</h2>
+						<p>The final strand improved the efficiency of geometric balance-region computation so it could be integrated directly into whole-body control. Dynamic region updates let HRP-4 adapt its centre of mass and contact forces while interacting with moving objects.</p>
+						<div class="video-frame">
+							<iframe src="https://www.youtube-nocookie.com/embed/QLtO3rb4_NY" title="HRP-4 control with fixed and moving unilateral contacts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="project-actions">
+							<a href="https://ieeexplore.ieee.org/document/9659359" class="button" target="_blank" rel="noopener noreferrer">Read the ICAR paper</a>
+							<a href="../publications.html" class="button">All publications</a>
+						</div>
+					</section>
+				</article>
+			</main>
 
-					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
-					    <iframe 
-						width="1120" 
-						height="630" 
-						src="https://www.youtube.com/embed/Wai-Lp4e5FE" 
-						title="YouTube video player" 
-						frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen>
-					    </iframe>
-					</div>
-					<div class="project-reference">
-					    <h3>For More Information</h3>
-					    <p>For more information, refer to the publication in the <em>2020 IEEE International Conference on Robotics and Automation (ICRA)</em>. <a href="https://ieeexplore.ieee.org/document/9911943" target="_blank">[Read Full Paper]</a></p>
-					</div>
-
-					<header class="major">
-						<span class="date">Oct. 2020 - Jan. 2021</span>
-					</header>
-					<div class="project-details">
-					    <h2>Control of Humanoid in Multiple Fixed and Moving Unilateral Contacts</h2>
-					    <p>
-						This project addresses the challenge of maintaining balance in multi-limbed humanoid robots, such as the HRP-4, during complex tasks involving multiple fixed and moving unilateral contacts. 
-						The key innovation lies in enhancing the computational efficiency of geometric balance region algorithms, making them feasible for real-time integration into whole-body control frameworks. 
-						By computing balance regions dynamically and incorporating them directly into task-level control, this approach avoids the traditional two-level computation pitfalls, ensuring smoother and more adaptive movements in humanoids.
-					    </p>
-					    <p>
-						Experimental validation involved HRP-4 performing tasks such as pushing a box while maintaining balance, demonstrating the feasibility of real-time control under challenging contact dynamics. 
-						The results highlight significant improvements in the robot's ability to adapt its center of mass (CoM) and contact forces dynamically.
-					    </p>
-					</div>
-
-					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
-					    <iframe 
-						width="1120" 
-						height="630" 
-						src="https://www.youtube.com/embed/QLtO3rb4_NY" 
-						title="YouTube video player" 
-						frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen>
-					    </iframe>
-					</div>
-					<div class="project-link">
-					    <p>
-						For more details, refer to the publication in the <em>20th International Conference on Advanced Robotics (ICAR), 2021</em>. 
-						<a href="https://ieeexplore.ieee.org/abstract/document/9659359" target="_blank">[Paper Link]</a>
-					    </p>
-					</div>
-
-
+			<footer id="footer" class="site-footer">
+				<section class="contact-cta">
+					<p class="eyebrow">Next project</p>
+					<h2>Physical interaction through touch</h2>
+					<p>See how capacitive and force sensing were used to make humanoid guidance intuitive for non-experts.</p>
+					<ul class="actions">
+						<li><a href="HRI.html" class="button primary">Human–robot interaction</a></li>
+						<li><a href="../projects.html" class="button">All projects</a></li>
+					</ul>
 				</section>
-			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<p>&copy; Saeid Samadi. All rights reserved.</p>
 			</footer>
 
+			<div id="copyright">
+				<ul><li>&copy; 2026 Saeid Samadi</li><li><a href="../static/Saeid_Samadi_CV.pdf" target="_blank" rel="noopener">Download CV</a></li></ul>
+			</div>
 		</div>
 
-		<!-- Scripts -->
 		<script src="../assets/js/jquery.min.js"></script>
 		<script src="../assets/js/jquery.scrollex.min.js"></script>
 		<script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -167,7 +131,5 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
-
 	</body>
 </html>
-

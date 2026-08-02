@@ -1,94 +1,107 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>Human-Robot Interaction</title>
+		<title>Touch-Based Human–Robot Interaction | Saeid Samadi</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="The Two-Touch Kinematic Chain Paradigm for intuitive physical manipulation of humanoid robots using touch and force sensing." />
+		<meta name="theme-color" content="#15202b" />
+		<link rel="canonical" href="https://saeidsamadi.github.io/projects/HRI.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Touch-Based Human–Robot Interaction" />
+		<meta property="og:description" content="A touch-and-force sensing framework that lets non-experts physically guide humanoid robots." />
+		<meta property="og:url" content="https://saeidsamadi.github.io/projects/HRI.html" />
+		<meta property="og:image" content="https://saeidsamadi.github.io/images/projects/HRI.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/portfolio.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<a class="skip-link" href="#main">Skip to main content</a>
 
-		<!-- Wrapper -->
 		<div id="wrapper">
-
-			<!-- Header -->
 			<header id="header">
-				<a href="../index.html" class="logo">Portfolio</a>
+				<a href="../index.html" class="logo">Saeid Samadi</a>
 			</header>
 
-			<!-- Nav -->
-			<nav id="nav">
+			<nav id="nav" aria-label="Primary navigation">
 				<ul class="links">
-					<li><a href="WBC.html">Whole-Body Balance</a></li>
-					<li class="active"><a href="HRI.html">Human-Robot Interaction</a></li>
-					<li><a href="Harmony.html">Harmony EU Project</a></li>
-					<li><a href="Planning.html">Motion Planning</a></li>
-					<li><a href="Assistive.html">Assistive Autonomy</a></li>
+					<li><a href="../index.html">About</a></li>
+					<li><a href="../education.html">Experience</a></li>
+					<li class="active"><a href="../projects.html" aria-current="page">Projects</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../insights.html">Expertise</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="mailto:sa.samadi74@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/SaeidSamadi" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=oerbhTkAAAAJ&amp;hl=en" class="icon brands fa-google" target="_blank" rel="noopener noreferrer"><span class="label">Google Scholar</span></a></li>
 				</ul>
 			</nav>
 
-			<!-- Main Content -->
-			<div id="main">
-				<section class="post">
-					<header class="major">
-						<h1><a href="HRI.html">Human-Robot Interaction</a></h1>
-						<span class="date">Feb. 2021 - Sep. 2021</span>
+			<main id="main">
+				<article class="post">
+					<a class="back-link" href="../projects.html"><span aria-hidden="true">&larr;</span> All projects</a>
+					<header class="major project-header">
+						<p class="eyebrow">Case study · 2021</p>
+						<h1>Touch-Based Human–Robot Interaction</h1>
+						<p class="lead">A physical interaction framework that translates two touch points into intuitive commands for joint-level and whole-body humanoid motion.</p>
+						<ul class="tag-list" aria-label="Project technologies">
+							<li>HRP-4</li>
+							<li>Capacitive sensing</li>
+							<li>Force/torque sensing</li>
+							<li>User study</li>
+						</ul>
 					</header>
-					<!-- Full Description -->
-					<div class="project-details">
-					    <h2>Touch Semantics for Intuitive Physical Manipulation of Humanoids</h2>
-					    <p>
-						This project focuses on creating a novel touch-based interaction protocol for humanoid robots to allow intuitive physical manipulation by humans. 
-						The research introduces the "Two-Touch Kinematic Chain Paradigm" (2TKCP), a set of rules for interpreting touch-based intentions. These rules enable 
-						users to manipulate the robot's joints or perform high-level whole-body tasks, such as repositioning, stepping, and walking, by exerting force 
-						through two touchpoints.
-					    </p>
-					    <p>
-						The method integrates capacitive touch sensors on the robot's shell and force-torque sensors on its limbs to detect human interaction. Using these 
-						inputs, the robot interprets touch intentions, allowing intuitive repositioning and task control. This approach eliminates the need for explicit programming, 
-						making it accessible for non-experts. The project further validates its methodology through a user study, showing that even novices can manipulate robots intuitively.
-					    </p>
-					    <ul>
-						<li>Developed the "Two-Touch Kinematic Chain Paradigm" (2TKCP).</li>
-						<li>Enabled intuitive manipulation using capacitive and force-torque sensors.</li>
-						<li>Validated methodology through user studies with non-experts.</li>
-					    </ul>
-					</div>
 
-					<!-- Reference to Publication -->
-					
+					<section class="project-section">
+						<h2>Touch semantics for intuitive manipulation</h2>
+						<h3>Challenge</h3>
+						<p>Programming or teleoperating a high-degree-of-freedom humanoid is difficult for non-specialists. The project asked whether a person could instead communicate motion intent by touching and physically guiding the robot in a natural way.</p>
 
-					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
-					    <iframe 
-						width="1120" 
-						height="630" 
-						src="https://www.youtube.com/embed/PnB4YgFdggs" 
-						title="YouTube video player" 
-						frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen>
-					    </iframe>
-					</div>
+						<h3>Approach</h3>
+						<p>The Two-Touch Kinematic Chain Paradigm (2TKCP) defines rules for interpreting a pair of physical contacts. Capacitive sensors identify where the robot is touched, while force/torque measurements capture the direction and intensity of guidance.</p>
+						<ul>
+							<li>Mapped two touch points to a relevant kinematic chain and motion intent.</li>
+							<li>Supported direct joint repositioning and higher-level whole-body behaviours.</li>
+							<li>Combined shell touch sensing with limb force/torque feedback.</li>
+							<li>Evaluated the interaction with non-expert users.</li>
+						</ul>
 
-					<div class="project-reference">
-					    <p>
-						For more information, refer to the publication in <em>IEEE Transactions on Human-Machine Systems</em>. 
-						<a href="https://doi.org/10.1109/THMS.2022.3207699" target="_blank">[View Paper]</a>
-					    </p>
-					</div>
+						<h3>Outcome</h3>
+						<p>Participants could guide repositioning, stepping, and walking behaviours without explicit robot programming, demonstrating a practical interface for physical collaboration.</p>
 
+						<div class="video-frame">
+							<iframe src="https://www.youtube-nocookie.com/embed/PnB4YgFdggs" title="Two-Touch Kinematic Chain Paradigm demonstration on HRP-4" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+
+						<div class="project-actions">
+							<a href="https://doi.org/10.1109/THMS.2022.3207699" class="button primary" target="_blank" rel="noopener noreferrer">Read the journal paper</a>
+							<a href="../publications.html" class="button">All publications</a>
+						</div>
+					</section>
+				</article>
+			</main>
+
+			<footer id="footer" class="site-footer">
+				<section class="contact-cta">
+					<p class="eyebrow">Next project</p>
+					<h2>Compliant mobile manipulation</h2>
+					<p>Explore a bilevel MPC framework for coordinated dual-arm manipulation in dynamic environments.</p>
+					<ul class="actions">
+						<li><a href="Harmony.html" class="button primary">Harmony EU project</a></li>
+						<li><a href="../projects.html" class="button">All projects</a></li>
+					</ul>
 				</section>
-			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<p>&copy; Saeid Samadi. All rights reserved.</p>
 			</footer>
 
+			<div id="copyright">
+				<ul><li>&copy; 2026 Saeid Samadi</li><li><a href="../static/Saeid_Samadi_CV.pdf" target="_blank" rel="noopener">Download CV</a></li></ul>
+			</div>
 		</div>
 
-		<!-- Scripts -->
 		<script src="../assets/js/jquery.min.js"></script>
 		<script src="../assets/js/jquery.scrollex.min.js"></script>
 		<script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -96,7 +109,5 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
-
 	</body>
 </html>
-

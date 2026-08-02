@@ -1,127 +1,128 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>Motion Planning</title>
+		<title>Humanoid Motion &amp; Footstep Planning | Saeid Samadi</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Complete footstep-solution computation and online receding-horizon multi-contact planning for humanoid robots." />
+		<meta name="theme-color" content="#15202b" />
+		<link rel="canonical" href="https://saeidsamadi.github.io/projects/Planning.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Humanoid Motion &amp; Footstep Planning" />
+		<meta property="og:description" content="Planning methods for responsive humanoid locomotion and multi-contact movement on challenging terrain." />
+		<meta property="og:url" content="https://saeidsamadi.github.io/projects/Planning.html" />
+		<meta property="og:image" content="https://saeidsamadi.github.io/images/projects/Planning.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/portfolio.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<a class="skip-link" href="#main">Skip to main content</a>
 
-		<!-- Wrapper -->
 		<div id="wrapper">
-
-			<!-- Header -->
 			<header id="header">
-				<a href="../index.html" class="logo">Portfolio</a>
+				<a href="../index.html" class="logo">Saeid Samadi</a>
 			</header>
 
-			<!-- Nav -->
-			<nav id="nav">
+			<nav id="nav" aria-label="Primary navigation">
 				<ul class="links">
-					<li><a href="WBC.html">Whole-Body Balance</a></li>
-					<li><a href="HRI.html">Human-Robot Interaction</a></li>
-					<li><a href="Harmony.html">Harmony EU Project</a></li>
-					<li class="active"><a href="Planning.html">Motion Planning</a></li>
-					<li><a href="Assistive.html">Assistive Autonomy</a></li>
+					<li><a href="../index.html">About</a></li>
+					<li><a href="../education.html">Experience</a></li>
+					<li class="active"><a href="../projects.html" aria-current="page">Projects</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../insights.html">Expertise</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="mailto:sa.samadi74@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/SaeidSamadi" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=oerbhTkAAAAJ&amp;hl=en" class="icon brands fa-google" target="_blank" rel="noopener noreferrer"><span class="label">Google Scholar</span></a></li>
 				</ul>
 			</nav>
 
-			<!-- Main Content -->
-			<div id="main">
-				<section class="post">
-					<header class="major">
-						<h1><a href="Planning.html">Foot Step Planning</a></h1>
-						<span class="date">Dec. 2023 - May. 2024</span>
+			<main id="main">
+				<article class="post">
+					<a class="back-link" href="../projects.html"><span aria-hidden="true">&larr;</span> All projects</a>
+					<header class="major project-header">
+						<p class="eyebrow">Case study · 2022–2024</p>
+						<h1>Humanoid Motion &amp; Footstep Planning</h1>
+						<p class="lead">Planning methods for responsive locomotion and multi-contact movement, from complete footstep-solution sets to efficient receding-horizon replanning.</p>
+						<ul class="tag-list" aria-label="Project technologies">
+							<li>TALOS</li>
+							<li>Footstep planning</li>
+							<li>Receding horizon</li>
+							<li>Value approximation</li>
+							<li>GPU parallelisation</li>
+						</ul>
 					</header>
-					<div class="project">
-					    <h2>NAS: N-step Computation of All Solutions to the Footstep Planning Problem</h2>
-					    <p>
-						This project presents NAS, an innovative algorithm designed to compute the entire set of feasible solutions for humanoid robot footstep planning problems. 
-						NAS introduces a globally optimal policy capable of efficiently querying real-time plans, enabling robots to plan and adapt footsteps in dynamic environments. 
-						Despite the theoretical exponential complexity, the framework optimizes computations to achieve a manageable bilinear complexity, supporting GPU parallelization.
-					    </p>
-					    <p>
-						The method is validated through extensive simulations and hardware experiments on the Talos humanoid robot, showcasing robust performance in various scenarios, 
-						including minimum-step locomotion planning and dynamic re-planning.
-					    </p>
-					    <p>
-						Future advancements aim to reduce computation times further and expand the algorithm's applicability to more complex motion planning scenarios.
-					    </p>
-					</div>
 
-					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
-					    <iframe 
-						width="1120" 
-						height="630"
-						src="https://www.youtube.com/embed/I5yFe0ez0sI" 
-						title="YouTube video player" 
-						frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen>
-					    </iframe>
-					</div>
-					<div class="project-reference">
-					    <p>
-						For more information, refer to the publication presented at the <em>IEEE-RAS 23rd International Conference on Humanoid Robots</em>, Nancy, France, 2024. 
-						<a href="https://ieeexplore.ieee.org/abstract/document/10769878" target="_blank">[Paper Link]</a>
-					    </p>
-					</div>
+					<section class="project-section">
+						<p class="eyebrow">Humanoids 2024</p>
+						<h2>NAS: N-step computation of all footstep solutions</h2>
+						<h3>Challenge</h3>
+						<p>A conventional footstep planner typically returns one solution for a particular objective. In changing environments, a robot benefits from knowing the complete feasible set so it can query or reselect plans rapidly as goals and constraints evolve.</p>
 
-					<header class="major">
-						<span class="date">Nov. 2022 - Oct. 2023</span>
-					</header>
-					<div class="project-details">
-					    <h2>Online Multicontact Receding Horizon Planning via Value Function Approximation</h2>
-					    <p>
-						This project focuses on enabling legged robots, such as humanoid robots, to plan multicontact motions in a receding horizon manner. 
-						By introducing novel approaches to approximate value functions, this work significantly reduces computation complexity, allowing real-time 
-						replanning of motions even in dynamic and uneven terrains. Two methods were proposed:
-					    </p>
-					    <ul>
-						<li><strong>Multi-Fidelity RHP (MF-RHP):</strong> Combines accurate dynamics modeling in the execution horizon with relaxed dynamics in the prediction horizon, ensuring efficient and feasible planning.</li>
-						<li><strong>Locally Guided RHP (LG-RHP):</strong> Uses a learned oracle to predict intermediate goals, constructing local value functions that guide efficient short-horizon planning.</li>
-					    </ul>
-					    <p>
-						Key contributions include extensive simulations validating the feasibility of planned trajectories, as well as real-world experiments on the Talos humanoid robot, demonstrating the effectiveness of the LG-RHP approach.
-					    </p>
-					    <p>
-						<strong>Goals:</strong> To enable real-time multicontact motion planning for humanoid robots traversing challenging terrains while ensuring computational efficiency and adaptability to dynamic environments.
-					    </p>
-					</div>
+						<h3>Approach</h3>
+						<p>NAS computes all feasible solutions to an N-step footstep-planning problem and constructs a globally optimal policy for efficient online queries. The implementation structures the computation for manageable bilinear complexity and GPU parallelisation.</p>
 
-					<div style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px 0;">
-					    <iframe 
-						width="1120" 
-						height="630" 
-						src="https://www.youtube.com/embed/STBYJl7jvsg?si=glKMFAOgofDCi1HS" 
-						title="YouTube video player" 
-						frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen>
-					    </iframe>
-					</div>
-					<div class="project-reference">
-					    <p>
-						For more information, refer to the publication in 
-						<em>IEEE Transactions on Robotics</em>: 
-						<a href="https://ieeexplore.ieee.org/abstract/document/10506550" target="_blank">[Paper Link]</a>.
-					    </p>
-					</div>
+						<h3>Outcome</h3>
+						<p>Simulation and TALOS experiments demonstrated minimum-step planning and responsive replanning across multiple locomotion scenarios.</p>
 
+						<div class="video-frame">
+							<iframe src="https://www.youtube-nocookie.com/embed/I5yFe0ez0sI" title="NAS footstep planning experiments on TALOS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
 
+						<div class="project-actions">
+							<a href="https://ieeexplore.ieee.org/document/10769878" class="button primary" target="_blank" rel="noopener noreferrer">Read the Humanoids paper</a>
+						</div>
+					</section>
+
+					<section class="project-section">
+						<p class="eyebrow">IEEE T-RO 2024</p>
+						<h2>Online multi-contact receding-horizon planning</h2>
+						<h3>Challenge</h3>
+						<p>Long-horizon multi-contact planning captures difficult terrain and whole-body constraints but is too expensive to solve repeatedly at full fidelity. Short horizons are faster but can make poor local decisions without information about the future.</p>
+
+						<h3>Approach</h3>
+						<p>The work introduced two ways to approximate the missing long-term value:</p>
+						<ul>
+							<li><strong>Multi-Fidelity RHP</strong> uses accurate dynamics in the execution horizon and relaxed dynamics farther into the prediction horizon.</li>
+							<li><strong>Locally Guided RHP</strong> uses a learned oracle to predict intermediate goals and build local value functions for efficient short-horizon planning.</li>
+						</ul>
+
+						<h3>Outcome</h3>
+						<p>Extensive simulations and TALOS experiments showed feasible, responsive multi-contact planning across dynamic and uneven environments.</p>
+
+						<div class="video-frame">
+							<iframe src="https://www.youtube-nocookie.com/embed/STBYJl7jvsg" title="Receding-horizon multi-contact planning experiments on TALOS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+
+						<div class="project-actions">
+							<a href="https://ieeexplore.ieee.org/document/10506550" class="button primary" target="_blank" rel="noopener noreferrer">Read the T-RO paper</a>
+							<a href="../publications.html" class="button">All publications</a>
+						</div>
+					</section>
+				</article>
+			</main>
+
+			<footer id="footer" class="site-footer">
+				<section class="contact-cta">
+					<p class="eyebrow">More work</p>
+					<h2>Explore all robotics projects</h2>
+					<p>Return to the collection for whole-body control, physical interaction, and mobile manipulation.</p>
+					<ul class="actions">
+						<li><a href="../projects.html" class="button primary">All projects</a></li>
+						<li><a href="WBC.html" class="button">Whole-body control</a></li>
+					</ul>
 				</section>
-			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<p>&copy; Saeid Samadi. All rights reserved.</p>
 			</footer>
 
+			<div id="copyright">
+				<ul><li>&copy; 2026 Saeid Samadi</li><li><a href="../static/Saeid_Samadi_CV.pdf" target="_blank" rel="noopener">Download CV</a></li></ul>
+			</div>
 		</div>
 
-		<!-- Scripts -->
 		<script src="../assets/js/jquery.min.js"></script>
 		<script src="../assets/js/jquery.scrollex.min.js"></script>
 		<script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -129,7 +130,5 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
-
 	</body>
 </html>
-
